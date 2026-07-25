@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máxima Machado - Promotora Zermat</title>
+    <!-- Íconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('fondo.png'); /* Renombra tu imagen como fondo.png */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            /* Se ubica estratégicamente en el espacio libre del centro */
+            margin-top: 10px; 
+            margin-bottom: 220px; 
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-link i {
+            font-size: 1.3rem;
+        }
+
+        /* Colores adaptados al diseño */
+        .facebook {
+            background: linear-gradient(135deg, #1877F2, #0056b3);
+        }
+
+        .claro {
+            background: linear-gradient(135deg, #E32219, #a81008);
+        }
+
+        .tigo {
+            background: linear-gradient(135deg, #00377B, #001f48);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1Ja51hjaDt/" target="_blank" class="btn-link facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Página de Facebook</span>
+        </a>
+
+        <!-- WhatsApp / Llamada Claro -->
+        <a href="https://wa.me/50589228328" target="_blank" class="btn-link claro">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Claro: +505 8922 8328</span>
+        </a>
+
+        <!-- WhatsApp / Llamada Tigo -->
+        <a href="https://wa.me/50582445184" target="_blank" class="btn-link tigo">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp Tigo: 8244 5184</span>
+        </a>
+    </div>
+
+</body>
+</html>
